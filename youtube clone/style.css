@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', 'san-serif';
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #5a5a5a;
+}
+
+img {
+    cursor: pointer;
+}
+
+.nav-left .menu {
+    width: 22px;
+    margin-right: 25px;
+}
+
+.nav-left .logo {
+    width: 130px;
+}
+
+.flex-div {
+    display: flex;
+    align-items: center;
+}
+
+#user-btn {
+    border-radius: 17px;
+    padding: 5px 12px;
+    width: 100%;
+    border-width: 0.8px;
+}
+
+#user-btn a {
+    font-size: 15px;
+    color: #006aff;
+}
+
+.flex-div #user-btn:hover {
+    background-color: rgb(90, 181, 211);
+    width: 100%;
+}
+
+nav {
+    padding: 10px 2%;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background: #ffff;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.nav-right img {
+    width: 25px;
+    margin-right: 25px;
+}
+
+.nav-right .user-icon {
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 0;
+}
+
+.nav-right .user-icon1 {
+    width: 70px;
+    color: blue;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 4px 9px;
+}
+
+.nav-middle .mic-icon {
+    width: 16px;
+}
+
+.nav-middle .search-box {
+    border: 1px solid #ccc;
+    margin-right: 15px;
+    padding: 8px 12px;
+    border-radius: 25px;
+}
+
+.nav-middle .search-box input {
+    width: 400px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+}
+
+.nav-middle .search-box img {
+    width: 20px;
+}
+
+/*--------------sidebar----------------*/
+.sidebar {
+    /* background: #fff; */
+    width: 15%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    padding-left: 2%;
+    padding-top: 80px;
+}
+
+.shoutcut-link a img {
+    width: 30px;
+    margin-right: 20px;
+}
+
+.shoutcut-link a {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: fit-content;
+    flex-wrap: wrap;
+}
+
+.shoutcut-link hr {
+    border: 0;
+    background: #ccc;
+    height: 1px;
+    width: 85%;
+}
+
+.Subsribed-list h3 {
+    font-size: 18px;
+    margin: 20px 0;
+    color: #5a5a5a;
+}
+
+.Subsribed-list a {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: fit-content;
+    flex-wrap: wrap;
+}
+
+.Subsribed-list a img {
+    border-radius: 50%;
+    width: 30px;
+    margin-right: 20px;
+}
+
+.small-sidebar {
+    width: 5%;
+}
+
+.small-sidebar a p {
+    display: none;
+}
+
+.small-sidebar h3 {
+    display: none;
+}
+
+.small-sidebar hr {
+    width: 50%;
+    margin-bottom: 25px;
+}
+
+/* ---------main------------- */
+.container {
+    background: #f9f9f9;
+    padding-left: 17%;
+    padding-top: 20px;
+    padding-right: 2%;
+    padding-bottom: 20px;
+}
+
+.large-container {
+    padding-left: 7%;
+}
+
+.topline {
+    width: 100%;
+}
+
+.topline img {
+    height: 35px;
+    min-width: 12px;
+    border-radius: 8px;
+}
+
+.list-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-column-gap: 16px;
+    grid-row-gap: 30px;
+    margin-top: 15px;
+}
+
+.vid-list .thumnail {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.vid-list .flex-div {
+    align-items: flex-start;
+    margin-top: 7px;
+}
+
+.vid-list .flex-div img {
+    width: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.vid-info {
+    color: #5a5a5a;
+    font-size: 13px;
+
+}
+
+.vid-info a {
+    color: #000;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 900px) {
+    .menu-icon {
+        display: none;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .container,
+    .large-container {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .nav-right img {
+        display: none;
+    }
+
+    .nav-right .user-icon {
+        display: block;
+        width: 30px;
+    }
+    .nav-right .user-icon1 {
+        width: 70px;
+        color: blue;
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 4px 9px;
+    }
+    .nav-right .user-icon {
+        padding: 1px 1px;
+    }
+    .nav-middle .search-box input {
+        width: 100%;
+    }
+
+    .nav-middle .mic-icon {
+        display: none;
+    }
+
+    .logo {
+        width: 90px;
+    }
+}
